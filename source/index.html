@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="./fonts/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/oswaldmedium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link href="css/normalize.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <title>HTML Academy: Кэт энерджи</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__top">
+        <div class="header__container">
+          <button class="header__menu-toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <a href="#" class="header__logo">
+            <img src="img/logo.svg" width="70" height="38" alt="">
+          </a>
+          <div class="menu">
+            <ul class="menu__user menu-user">
+              <li class="menu-user__item">
+                <a class="menu-user__link menu-user__link--active" href="#">Войти</a>
+              </li>
+              <li class="menu-user__item">
+                <a class="menu-user__link" href="#">Регистрация</a>
+              </li>
+              <li class="menu-user__item">
+                <a class="menu-user__link" href="#">Избранное</a>
+              </li>
+            </ul>
+            <ul class="menu__main-nav main-nav">
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">Магазины</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">Акции</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">Доставка и оплата</a>
+              </li>
+            </ul>
+            <ul class="menu__products menu-products">
+              <li class="menu-products__item">
+                <a class="menu-products__link" href="#">Каталог запчастей</a>
+              </li>
+              <li class="menu-products__item">
+                <a class="menu-products__link" href="#">Каталог ТО</a>
+              </li>
+              <li class="menu-products__item">
+                <a class="menu-products__link" href="#">Шины</a>
+              </li>
+              <li class="menu-products__item">
+                <a class="menu-products__link" href="#">Диски</a>
+              </li>
+              <li class="menu__cats-item">
+                <a class="menu__cats-link" href="#">Аккумуляторы</a>
+              </li>
+              <li class="menu__cats-item">
+                <a class="menu__cats-link" href="#">Автомасла</a>
+              </li>
+              <li class="menu__cats-item">
+                <a class="menu__cats-link" href="#">Автолампы</a>
+              </li>
+              <li class="menu__cats-item">
+                <a class="menu__cats-link" href="#">Аксессуары</a>
+              </li>
+            </ul>
+            <a class="menu-products__address" href="#">Санкт-Петербург, ул Большая Конюшенная, д&nbsp;19</a>
+          </div>
+          <ul class="header__container__user user-nav">
+            <li class="user-nav__item">
+              <a class="user-nav__link user-nav__link--favorites" href="add.html"><span class="visually-hidden">Избранное</span></a>
+            </li>
+            <li class="user-nav__item">
+              <a class="user-nav__link user-nav__link--account" href="#"><span class="visually-hidden">Личный кабинет</span></a>
+            </li>
+            <li class="user-nav__item">
+              <a class="user-nav__link user-nav__link--cart" href="#"><span class="visually-hidden">Корзина</span>
+                <span class="visually-hidden">Корзина</span>
+                <span class="user-nav__link-content">1</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="header__bottom nav">
+        <div class="nav__container">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="#">Каталог Запчастей</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Каталог ТО</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link nav__link--active" href="#">Шины</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Диски</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Аккумуляторы</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Автомасла</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Автолампы</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Аксессуары</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <a class="main-nav__link " href="#" itemprop="url"><span class="main-nav__icon" aria-hidden="true"><svg aria-hidden="true" width="16" height="16"><use xlink:href="/img/sprites/general.v47.svg#course"></use></svg></span>Практикум</a>
+    </header>
+    <main class="main">
+      <section class="notice">
+        <div class="notice__slider slider slider--notice">
+          <div class="slider__slide">
+            <div class="slider__content slider__content--first">
+            </div>
+          </div>
+          <div class="slider__slide">
+            <div class="slider__content slider__content--first">
+            </div>
+          </div>
+          <div class="slider__slide">
+            <div class="slider__content slider__content--first">
+            </div>
+          </div>
+          <!--<div class="slider__slide">
+            <div class="slider__content">
+              <img src="img/123.jpg" width="480" height="319" alt="">
+            </div>
+          </div>
+          <div class="slider__slide">
+            <div class="slider__content">
+              <img src="img/big-slider-image.jpg" width="870" height="397" alt="">
+            </div>
+          </div>-->
+        </div>
+        <div class="notice__action slider slider--big-dots">
+          <article class="action">
+            <h3 class="action__title visually-hidden">
+              Акция!
+            </h3>
+            <div class="action__price">
+              <div class="action__price-new">
+                200
+              </div>
+              <div class="action__price-old">
+                500
+              </div>
+            </div>
+            <figure class="action__fig">
+              <picture>
+                <img src="img/lamp.jpg" srcset="img/lamp-2@2x.jpg 2x" width="151" height="181" alt="Лампа накаливания">
+              </picture>
+              <figcaption class="action__figcaption">Лампочка mini...</figcaption>
+            </figure>
+            <div class="action__footer">
+              <div class="action__footer-caption">
+                До конца акции осталось:
+              </div>
+              <div class="action__countdown countdown">
+                <div class="countdown__dial">
+                  <div class="countdown__numbers">00</div>
+                  <div class="countdown__caption">часов</div>
+                </div>
+                <div class="countdown__dial">
+                  <div class="countdown__numbers">20</div>
+                  <div class="countdown__caption">минут</div>
+                </div>
+                <div class="countdown__dial">
+                  <div class="countdown__numbers">00</div>
+                  <div class="countdown__caption">секунд</div>
+                </div>
+              </div>
+            </div>
+            <a class="action__link" href="#">
+              <span class="visually-hidden">
+                Перейти на страницу товара
+              </span>
+            </a>
+          </article>
+          <article class="action">
+            <h3 class="action__title visually-hidden">
+              Акция!
+            </h3>
+            <div class="action__price">
+              <div class="action__price-new">
+                200
+              </div>
+              <div class="action__price-old">
+                500
+              </div>
+            </div>
+            <figure class="action__fig">
+              <picture>
+                <img src="img/tire-2.jpg" srcset="img/tire-2@2x.jpg 2x" width="150" height="187" alt="Лампа накаливания">
+              </picture>
+              <figcaption class="action__figcaption">Лампочка mini...</figcaption>
+            </figure>
+            <div class="action__footer">
+              <div class="action__footer-caption">
+                До конца акции осталось:
+              </div>
+              <div class="action__countdown countdown">
+                <div class="countdown__dial">
+                  <div class="countdown__numbers">00</div>
+                  <div class="countdown__caption">часов</div>
+                </div>
+                <div class="countdown__dial">
+                  <div class="countdown__numbers">20</div>
+                  <div class="countdown__caption">минут</div>
+                </div>
+                <div class="countdown__dial">
+                  <div class="countdown__numbers">00</div>
+                  <div class="countdown__caption">секунд</div>
+                </div>
+              </div>
+            </div>
+            <a class="action__link" href="#">
+              <span class="visually-hidden">
+                Перейти на страницу товара
+              </span>
+            </a>
+          </article>
+          <article class="action">
+            <h3 class="action__title visually-hidden">
+              Акция!
+            </h3>
+            <div class="action__price">
+              <div class="action__price-new">
+                200
+              </div>
+              <div class="action__price-old">
+                500
+              </div>
+            </div>
+            <figure class="action__fig">
+              <picture>
+                <img src="img/lamp.jpg" srcset="img/lamp@2x.jpg 2x" width="150" height="187" alt="Лампа накаливания">
+              </picture>
+              <figcaption class="action__figcaption">Лампочка mini...</figcaption>
+            </figure>
+            <div class="action__footer">
+              <div class="action__footer-caption">
+                До конца акции осталось:
+              </div>
+              <div class="action__countdown countdown">
+                <div class="countdown__dial">
+                  <div class="countdown__numbers">00</div>
+                  <div class="countdown__caption">часов</div>
+                </div>
+                <div class="countdown__dial">
+                  <div class="countdown__numbers">20</div>
+                  <div class="countdown__caption">минут</div>
+                </div>
+                <div class="countdown__dial">
+                  <div class="countdown__numbers">00</div>
+                  <div class="countdown__caption">секунд</div>
+                </div>
+              </div>
+            </div>
+            <a class="action__link" href="#">
+              <span class="visually-hidden">
+                Перейти на страницу товара
+              </span>
+            </a>
+          </article>
+        </div>
+      </section>
+
+      <section class="search">
+        <h2 class="visually-hidden">Поиск по сайту</h2>
+        <div class="search__container tabs">
+          <div class="tabs__list-wrap">
+            <ul class="tabs__list">
+              <li class="tabs__item">
+                <a class="tabs__link" href="#search-vin">Поиск по Vin</a>
+              </li>
+              <li class="tabs__item">
+                <a class="tabs__link tabs__link--active" href="#search-brand">Поиск по марке</a>
+              </li>
+              <li class="tabs__item">
+                <a class="tabs__link" href="#search-name">Поиск по названию товара</a>
+              </li>
+              <li class="tabs__item">
+                <a class="tabs__link" href="#search-article">Поиск по артикулу</a>
+              </li>
+            </ul>
+          </div>
+          <section class="tabs__panel tabs__panel--active" id="search-vin">
+            <h3 class="visually-hidden">Поиск по vin</h3>
+            <form method="POST" action="#">
+              <div class="search__fields">
+                <div class="search-input">
+                  <label class="visually-hidden" for="search-vin-input">Введите vin код</label>
+                  <input type="search" placeholder="Введите vin код" id="search-vin-input" name="search-input"
+                  required="">
+                </div>
+                <button class="button" type="submit">
+                  <span>Искать</span>
+                </button>
+              </div>
+            </form>
+          </section>
+          <section class="tabs__panel" id="search-brand">
+            <h3 class="visually-hidden">Поиск по марке автомобиля</h3>
+            <form method="POST" action="#">
+              <div class="search__fields">
+                <div class="search-input">
+                  <label class="visually-hidden" for="search-brand-input">Введите марку автомобиля</label>
+                  <input type="search" placeholder="Введите марку автомобиля" id="search-brand-input" name="search-input"
+                  required="">
+                </div>
+                <button class="button" type="submit">
+                  <span>Искать</span>
+                </button>
+              </div>
+            </form>
+          </section>
+          <section class="tabs__panel" id="search-name">
+            <h3 class="visually-hidden">Поиск по названию товара</h3>
+            <form method="POST" action="#">
+              <div class="search__fields">
+                <div class="search-input">
+                  <label class="visually-hidden" for="search-name-input">Введите название товара</label>
+                  <input type="search" placeholder="Введите название товара" id="search-name-input" name="search-input"
+                  required="">
+                </div>
+                <button class="button" type="submit">
+                  <span>Искать</span>
+                </button>
+              </div>
+            </form>
+          </section>
+        </div>
+      </section>
+
+      <section class="categories">
+        <div class="categories__container">
+          <h2 class="visually-hidden">Категории товаров</h2>
+          <ul class="categories__list">
+            <li class="categories__item categories__item--cemicals">
+              <a class="categories__wrap-link" href="#">
+                <h3 class="categories__title">Автохимия</h3>
+                <span class="categories__link">Перейти</span>
+              </a>
+            </li>
+            <li class="categories__item categories__item--tires">
+              <a class="categories__wrap-link" href="#">
+                <h3 class="categories__title">Шины и диски</h3>
+                <span class="categories__link">Перейти</span>
+              </a>
+            </li>
+            <li class="categories__item categories__item--tools">
+              <a class="categories__wrap-link" href="#">
+                <h3 class="categories__title">Инструменты</h3>
+                <span class="categories__link">Перейти</span>
+              </a>
+            </li>
+            <li class="categories__item categories__item--spares">
+              <a class="categories__wrap-link" href="#">
+                <h3 class="categories__title">Запчасти на ТО</h3>
+                <span class="categories__link">Перейти</span>
+              </a>
+            </li>
+            <li class="categories__item categories__item--electronic">
+              <a class="categories__wrap-link" href="#">
+                <h3 class="categories__title">Автоэлектроника</h3>
+                <span class="categories__link">Перейти</span>
+              </a>
+            </li>
+            <li class="categories__item">
+              <a class="categories__wrap-link" href="#">
+                <h3 class="categories__title">Аксессуары и другое</h3>
+                <span class="categories__link">Перейти</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="categories2">
+        <div class="categories2__container">
+          <h2 class="visually-hidden">Категории товаров</h2>
+          <ul class="categories2__list">
+            <li class="categories2__item categories__item--cemicals">
+              <a class="categories2__wrap-link" href="#">
+                <h3 class="categories2__title">Автохимия</h3>
+                <span class="categories2__link">Перейти</span>
+              </a>
+            </li>
+            <li class="categories2__item categories__item--tires">
+              <a class="categories2__wrap-link" href="#">
+                <h3 class="categories2__title">Шины и диски</h3>
+                <span class="categories2__link">Перейти</span>
+              </a>
+            </li>
+            <li class="categories2__item categories__item--tools">
+              <a class="categories2__wrap-link" href="#">
+                <h3 class="categories2__title">Инструменты</h3>
+                <span class="categories2__link">Перейти</span>
+              </a>
+            </li>
+            <li class="categories2__item categories__item--spares">
+              <a class="categories2__wrap-link" href="#">
+                <h3 class="categories2__title">Запчасти на ТО</h3>
+                <span class="categories2__link">Перейти</span>
+              </a>
+            </li>
+            <li class="categories2__item categories__item--electronic">
+              <a class="categories2__wrap-link" href="#">
+                <h3 class="categories2__title">Автоэлектроника</h3>
+                <span class="categories2__link">Перейти</span>
+              </a>
+            </li>
+            <li class="categories2__item">
+              <a class="categories2__wrap-link" href="#">
+                <h3 class="categories2__title">Аксессуары и другое</h3>
+                <span class="categories2__link">Перейти</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="wares wares--popular">
+        <div class="wares__container tabs">
+          <h2 class="wares__title">
+            Популярные товары
+          </h2>
+          <button class="button button__list" type="button">Показать список</button>
+          <ul class="list_for_ajax"></ul>
+          <button class="button button__gallery" type="button">Показать картинки</button>
+          <div class="gallery_for_ajax"></div>
+            <div class="tabs__list-wrap">
+              <ul class="tabs__list">
+                <li class="tabs__item">
+                  <a class="tabs__link" href="#wares-spares">запчасти</a>
+                </li>
+                <li class="tabs__item">
+                  <a class="tabs__link tabs__link--active" href="#wares-autochemicals">автохимия</a>
+                </li>
+                <li class="tabs__item">
+                  <a class="tabs__link" href="#wares-tires">шины и диски</a>
+                </li>
+                <li class="tabs__item">
+                  <a class="tabs__link" href="#wares-autoelectronics">электроника</a>
+                </li>
+              </ul>
+            </div>
+          <section class="tabs__panel tabs__panel--active" id="wares-spares">
+            <h3 class="visually-hidden">Запчасти</h3>
+            <div class="wares__list slider slider--big-dots">
+              <div class="wares__item">
+                <div class="wares__attributes">
+                  <button class="favorite" title="Добавить в избранное" type="button">
+                    <span class="visually-hidden">
+                      Добавить в избранное
+                    </span>
+                  </button>
+                </div>
+                <figure class="wares__fig">
+                  <picture>
+                    <img src="img/belt.jpg" srcset="img/belt@2x.jpg 2x" width="230" height="215"
+                      alt="Ремень с застёжкой">
+                  </picture>
+                  <figcaption class="wares__figcaption">Ремень</figcaption>
+                </figure>
+                <div class="wares__presence" aria-hidden="true"></div>
+                <div class="wares__price">440 ₽</div>
+                <a class="wares__link" href="#">
+                  <span class="visually-hidden">
+                    Перейти на страницу товара
+                  </span>
+                </a>
+              </div>
+              <div class="wares__item">
+                <div class="wares__attributes">
+                  <button class="favorite favorite--active" title="Добавить в избранное" type="button">
+                    <span class="visually-hidden">
+                      Добавить в избранное
+                    </span>
+                  </button>
+                </div>
+                <figure class="wares__fig">
+                  <picture>
+                    <img src="img/tire.jpg" srcset="img/tire@2x.jpg 2x" width="126" height="181"
+                      alt="Ремень с застёжкой">
+                  </picture>
+                  <figcaption class="wares__figcaption">Шина 205/80 R16 104Q Misha RF Power Grum</figcaption>
+                </figure>
+                <div class="wares__presence" aria-hidden="true"></div>
+                <div class="wares__price">11 680 ₽</div>
+                <a class="wares__link" href="#">
+                  <span class="visually-hidden">
+                    Перейти на страницу товара
+                  </span>
+                </a>
+              </div>
+              <div class="wares__item">
+                <div class="wares__attributes">
+                  <button class="favorite" title="Добавить в избранное" type="button">
+                    <span class="visually-hidden">
+                      Добавить в избранное
+                    </span>
+                  </button>
+                </div>
+                <figure class="wares__fig">
+                  <picture>
+                    <img src="img/headlight.jpg" srcset="img/headlight@2x.jpg 2x" width="232" height="174"
+                      alt="Ремень с застёжкой">
+                  </picture>
+                  <figcaption class="wares__figcaption">Фара Nokian 2025</figcaption>
+                </figure>
+                <div class="wares__presence" aria-hidden="true"></div>
+                <div class="wares__price">540 ₽</div>
+                <a class="wares__link" href="#">
+                  <span class="visually-hidden">
+                    Перейти на страницу товара
+                  </span>
+                </a>
+              </div>
+              <div class="wares__item">
+                <div class="wares__attributes">
+                <button class="favorite" title="Добавить в избранное" type="button">
+                  <span class="visually-hidden">
+                    Добавить в избранное
+                  </span>
+                </button>
+                </div>
+                <figure class="wares__fig">
+                  <picture>
+                    <img src="img/tire-2.jpg" srcset="img/tire-2@2x.jpg 2x" width="151" height="181"
+                      alt="Ремень с застёжкой">
+                  </picture>
+                  <figcaption class="wares__figcaption">Шина 245/60 R18 105T Contyther Crosh Conta..</figcaption>
+                </figure>
+                <div class="wares__presence wares__presence--none">
+                  <div class="wares__presence-text">Нет в наличии</div>
+                  <a class="wares__presence-link" href="#">Сообщить о поступлении</a>
+                </div>
+                <a class="wares__link" href="#">
+                  <span class="visually-hidden">
+                    Перейти на страницу товара
+                  </span>
+                </a>
+              </div>
+            </div>
+            <div class="wares__footer">
+              <a class="wares__link-more" href="#">Смотреть еще</a>
+            </div>
+          </section>
+          <section class="tabs__panel" id="wares-autochemicals">
+            <h3>Автохимия</h3>
+
+          </section>
+
+          <section class="tabs__panel" id="wares-tires">
+            <h3>Шины и диски</h3>
+
+          </section>
+
+          <section class="tabs__panel" id="wares-autoelectronics">
+            <h3>Автоэлектроника</h3>
+
+          </section>
+        </div>
+      </section>
+      <div class="banner">
+        <div class="banner__container">
+          <a class="banner__element" href="#">
+            <span class="visually-hidden">Посмотреть все</span>
+          </a>
+        </div>
+      </div>
+      <div class="banner">
+        <div class="banner__container">
+          <a class="banner2__element" href="#">
+            <img src="img/123.jpg" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="banner3">
+        <div>
+          <img src="img/sky800.jpg" alt="">
+        </div>
+        <div>
+          <img src="img/girl400.jpg" alt="">
+        </div>
+        <div>
+          <img src="img/sky1280.jpg" alt="">
+        </div>
+      </div>
+
+      <div class="banner4">
+        <div>
+          <img src="img/sky800.jpg" alt="">
+        </div>
+        <div>
+          <img src="img/girl400.jpg" alt="">
+        </div>
+        <div>
+          <img src="img/sky1280.jpg" alt="">
+        </div>
+      </div>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__container">
+          <div class="page-footer__form">
+            <h2>Подпишитесь на нашу рассылку и узнавайте об акциях быстрее</h2>
+            <form action="#" method="get">
+              <label class="visually-hidden" for="email">Введите ваш e-mail:</label>
+              <input type="email" name="email" id="email" placeholder="Введите ваш e-mail:" required="">
+              <button type="submit" name="button">Отправить</button>
+            </form>
+            </div>
+            <div class="page-footer__sections">
+              <div class="page-footer__info">
+                <div class="page-footer__accordeon-container">
+                  <h2>Информация</h2>
+                  <button type="button" name="button">
+                    <span class="visually-hidden">Информация</span>
+                  </button>
+                </div>
+                <ul>
+                  <li>
+                    <a href="#">О компании</a>
+                  </li>
+                  <li>
+                    <a href="#">Контакты</a>
+                  </li>
+                  <li>
+                    <a href="#">Реквизиты</a>
+                  </li>
+                  <li>
+                    <a href="#">Магазины</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="page-footer__service">
+                <div class="page-footer__accordeon-container">
+                  <h2>Сервисный центр</h2>
+                  <button type="button" name="button">
+                    <span class="visually-hidden">
+                      Сервисный центр
+                    </span>
+                  </button>
+                </div>
+                <ul>
+                  <li>
+                    <a href="#">Доставка и самовывоз</a>
+                  </li>
+                  <li>
+                    <a href="#">Оплата</a>
+                  </li>
+                  <li>
+                    <a href="#">Возврат-обмен</a>
+                  </li>
+                  <li>
+                    <a href="#">Новости</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="page-footer__store">
+                <div class="page-footer__accordeon-container">
+                  <h2>Интернет-магазин</h2>
+                  <button type="button" name="button">
+                    <span class="visually-hidden">
+                      Интернет магазин
+                    </span>
+                  </button>
+                </div>
+                <ul>
+                  <li>
+                    <a href="#">Доставка и самовывоз</a>
+                  </li>
+                  <li>
+                    <a href="#">Оплата</a>
+                  </li>
+                  <li>
+                    <a href="#">Возврат-обмен</a>
+                  </li>
+                  <li>
+                    <a href="#">Новости</a>
+                  </li>
+                  <li>
+                    <a href="#">Акции</a>
+                  </li>
+                  <li>
+                    <a href="#">Договор оферты</a>
+                  </li>
+                  <li>
+                    <a href="#">Политика обработки
+                      персональных данных</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <p class="page-footer__title">Интернет-магазин автозапчастей</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/main/menu.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/script.js"></script>
+    <!--<script src="js/tabs.js"></script>-->
+    <script src="js/tabs-js.js"></script>
+    <script src="js/favorite.js"></script>
+    <script src="js/footer.js"></script>
+    <script type="module" src="js/server.js"></script>
+    <script type="module" src="js/list.js"></script>
+  </body>
+</html>
+<!-- https://www.figma.com/file/6uBt7YbvD5W2VNolLqwpzS/NFT-Landing-Page-Concept-(Community)?node-id=4%3A89 -->

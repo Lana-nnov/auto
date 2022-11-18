@@ -1,0 +1,99 @@
+.action, .action.slick-slide {
+  display: flex;
+  flex-direction: column;
+  height: 397px;
+  position: relative;
+}
+
+.action::before {
+  content: "Акция";
+  position: absolute;
+  left: -31px;
+  top: 31px;
+  display: block;
+  width: 87px;
+  height: 25px;
+  transform: rotate(-90deg);
+  font-size: 12px;
+  line-height: 25px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  background: linear-gradient(93.82deg, #9710e9 1.17%, #fd8d43 99.31%);
+}
+
+.action__fig {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: bisque;
+}
+
+.action__figcaption {
+  padding-top: 20px;
+  font-size: 23px;
+  line-height: 28px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.action__footer {
+  background-color: #f0f0f4;
+  padding-top: 15px;
+  flex-grow: 1;
+}
+
+.action__footer-caption {
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.6px;
+  color: #48494d;
+}
+
+.action__link {
+  position: absolute;
+}
+
+.action__price {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+
+.action__price-new {
+  padding-bottom: 5px;
+  font-size: 27px;
+  line-height: 32px;
+  font-weight: 700;
+  color: #ff7931;
+
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 14px;
+    height: 17px;
+    background-image: url('../../img/rouble.svg');
+  }
+}
+
+.action__price-old {
+  padding-left: 8px;
+  padding-right: 8px;
+  font-size: 20px;
+  line-height: 16px;
+  color: #a8a8a8;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url('../../img/diagonal.svg');
+
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 13px;
+    background-image: url('../../img/rouble-old.svg');
+  }
+}
+
+

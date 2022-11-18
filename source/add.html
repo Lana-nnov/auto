@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="./fonts/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/oswaldmedium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link href="css/normalize.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <title>HTML Academy: Кэт энерджи</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <button class="header__menu-toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <a href="#" class="header__logo">
+          <img src="img/logo.svg" width="70" height="38" alt="">
+        </a>
+        <div class="menu">
+          <ul class="menu__user menu-user">
+            <li class="menu-user__item">
+              <a class="menu-user__link menu-user__link--active" href="#">Войти</a>
+            </li>
+            <li class="menu-user__item">
+              <a class="menu-user__link" href="#">Регистрация</a>
+            </li>
+            <li class="menu-user__item">
+              <a class="menu-user__link" href="#">Избранное</a>
+            </li>
+          </ul>
+          <ul class="menu__main-nav main-nav">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Магазины</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Акции</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Доставка и оплата</a>
+            </li>
+          </ul>
+          <ul class="menu__products menu-products">
+            <li class="menu-products__item">
+              <a class="menu-products__link" href="#">Каталог заплчастей</a>
+            </li>
+            <li class="menu-products__item">
+              <a class="menu-products__link" href="#">Каталог ТО</a>
+            </li>
+            <li class="menu-products__item">
+              <a class="menu-products__link" href="#">Шины</a>
+            </li>
+            <li class="menu-products__item">
+              <a class="menu-products__link" href="#">Диски</a>
+            </li>
+          </ul>
+          <a class="menu-products__address" href="#">Санкт-Петербург, ул Большая Конюшенная, д&nbsp;19</a>
+        </div>
+        <ul class="header__container__user user-nav">
+          <li class="user-nav__item">
+            <a class="user-nav__link user-nav__link--favorites" href="add.html"><span class="visually-hidden">Избранное</span></a>
+          </li>
+          <li class="user-nav__item">
+            <a class="user-nav__link user-nav__link--account" href="#"><span class="visually-hidden">Личный кабинет</span></a>
+          </li>
+          <li class="user-nav__item">
+            <a class="user-nav__link user-nav__link--cart" href="#"><span class="visually-hidden">Корзина</span></a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main class="main">
+      <h2>Пример адаптивных картинок с фиксированной высотой</h2>
+      <section class="img-adaptive">
+        <div>
+          <img class="img-adaptive__first" src="img/big-slider-image.jpg">
+        </div>
+        <div>
+          <img class="img-adaptive__second" src="img/123.jpg">
+        </div>
+      </section>
+      <h2>Пример адаптивных картинок с разной высотой</h2>
+      <section class="img-adaptive-diff">
+        <div>
+          <img class="img-adaptive-diff__first" src="img/big-slider-image.jpg">
+        </div>
+        <div>
+          <img class="img-adaptive-diff__second" src="img/123.jpg">
+        </div>
+      </section>
+      <h2>пример слайдера с картинкой в разметке</h2>
+      <section class="img-adaptive2">
+        <div>
+          <img class="img-adaptive2__first" src="img/big-slider-image.jpg">
+        </div>
+        <div>
+          <div class="img-adaptive2__notice notice__action">
+            <article class="action">
+              <h3 class="action__title visually-hidden">
+                Акция!
+              </h3>
+              <div class="action__price">
+                <div class="action__price-new">
+                  200
+                </div>
+                <div class="action__price-old">
+                  500
+                </div>
+              </div>
+              <figure class="action__fig">
+                <picture>
+                  <img src="img/tire-2.jpg" srcset="img/tire-2@2x.jpg 2x" width="151" height="181" alt="Лампа накаливания">
+                </picture>
+                <figcaption class="action__figcaption">Лампочка mini...</figcaption>
+              </figure>
+              <div class="action__footer">
+                <div class="action__footer-caption">
+                  До конца акции осталось:
+                </div>
+                <div class="action__countdown countdown">
+                  <div class="countdown__dial">
+                    <div class="countdown__numbers">00</div>
+                    <div class="countdown__caption">часов</div>
+                  </div>
+                  <div class="countdown__dial">
+                    <div class="countdown__numbers">20</div>
+                    <div class="countdown__caption">минут</div>
+                  </div>
+                  <div class="countdown__dial">
+                    <div class="countdown__numbers">00</div>
+                    <div class="countdown__caption">секунд</div>
+                  </div>
+                </div>
+              </div>
+              <a class="action__link" href="#">
+                <span class="visually-hidden">
+                  Перейти на страницу товара
+                </span>
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+      <h2>пример слайдера с фоновой картинкой</h2>
+      <section class="img-adaptive3">
+        <div class="img-adaptive3__img">
+        </div>
+        <div>
+          <div class="img-adaptive3__notice notice__action">
+            <article class="action">
+              <h3 class="action__title visually-hidden">
+                Акция!
+              </h3>
+              <div class="action__price">
+                <div class="action__price-new">
+                  200
+                </div>
+                <div class="action__price-old">
+                  500
+                </div>
+              </div>
+              <figure class="action__fig">
+                <picture>
+                  <img src="img/tire-2.jpg" srcset="img/tire-2@2x.jpg 2x" width="151" height="181" alt="Лампа накаливания">
+                </picture>
+                <figcaption class="action__figcaption">Лампочка mini...</figcaption>
+              </figure>
+              <div class="action__footer">
+                <div class="action__footer-caption">
+                  До конца акции осталось:
+                </div>
+                <div class="action__countdown countdown">
+                  <div class="countdown__dial">
+                    <div class="countdown__numbers">00</div>
+                    <div class="countdown__caption">часов</div>
+                  </div>
+                  <div class="countdown__dial">
+                    <div class="countdown__numbers">20</div>
+                    <div class="countdown__caption">минут</div>
+                  </div>
+                  <div class="countdown__dial">
+                    <div class="countdown__numbers">00</div>
+                    <div class="countdown__caption">секунд</div>
+                  </div>
+                </div>
+              </div>
+              <a class="action__link" href="#">
+                <span class="visually-hidden">
+                  Перейти на страницу товара
+                </span>
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="js/jquery.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
+<!-- https://www.figma.com/file/6uBt7YbvD5W2VNolLqwpzS/NFT-Landing-Page-Concept-(Community)?node-id=4%3A89 -->

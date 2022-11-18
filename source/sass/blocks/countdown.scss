@@ -1,0 +1,21 @@
+.countdown {
+  display: flex;
+  justify-content: center;
+}
+
+.countdown__dial {
+  padding-right: 5px;
+  padding-left: 4px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  color: #48494d;
+}
+
+.countdown__caption {
+  margin-top: -4px;
+  font-size: 10px;
+  line-height: 12px;
+  color: #c4c4c4;
+}

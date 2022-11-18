@@ -1,0 +1,52 @@
+.user-nav {
+  outline: 1px solid red;
+  display: flex;
+  padding: 0 0 0 20px;
+  list-style: none;
+}
+
+.user-nav__link--favorites::before {
+  width: 27px;
+  height: 25px;
+  background-image: url('../img/favorites.svg');
+}
+
+.user-nav__link--account::before {
+  width: 21px;
+  height: 24px;
+  background-image: url('../img/account.svg');
+}
+
+.user-nav__link--cart::before {
+  width: 29px;
+  height: 26px;
+  background-image: url('../img/cart.svg');
+}
+
+.user-nav__link {
+  padding-right: 9px;
+  display: block;
+  margin-left: 5px;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+.user-nav__link-content {
+  position: absolute;
+  bottom: -10px;
+  right: 0;
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  font-size: 12px;
+  line-height: 23px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #ff7931;
+}

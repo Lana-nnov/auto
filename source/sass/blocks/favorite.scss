@@ -1,0 +1,22 @@
+.favorite {
+    padding: 0;
+    margin-right: 5px;
+    border: 0;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
+    display: inline-block;
+    vertical-align: middle;
+    width: 27px;
+    height: 25px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../img/favorites.svg);
+}
+
+.favorite--active, .favorite:active {
+  background-image: url(../img/favorites-active.svg);
+}

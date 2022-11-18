@@ -1,0 +1,106 @@
+.img-adaptive {
+  max-width: 1210px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  outline: 1px solid red;
+  margin-bottom: 40px;
+}
+
+.img-adaptive-diff {
+  max-width: 1210px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  outline: 1px solid red;
+  margin-bottom: 40px;
+}
+
+.img-adaptive2 {
+  max-width: 1210px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  outline: 1px solid red;
+  margin-bottom: 40px;
+}
+
+.img-adaptive3 {
+  max-width: 1210px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  outline: 1px solid red;
+  margin-bottom: 40px;
+  align-items: center;
+}
+
+.img-adaptive div {
+  height: 500px;
+  overflow-y: hidden;
+}
+
+.img-adaptive img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.img-adaptive__first {
+  object-position: 20% center;
+}
+
+.img-adaptive__second {
+  object-position: center;
+}
+
+.img-adaptive2__notice {
+  margin: 0 auto;
+}
+
+.img-adaptive3__img {
+  width: 100%;
+  height: 397px;
+  border-radius: 3px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../img/big-slider-image.jpg);
+  background-color: pink;
+}
+
+@media(min-width: 768px) {
+  .img-adaptive2 {
+    flex-direction: row;
+    align-items: center;
+    max-width: 1170px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .img-adaptive2__notice {
+    margin-left: 40px;
+  }
+
+  .img-adaptive3 {
+    flex-direction: row;
+    align-items: center;
+    max-width: 1170px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .img-adaptive3__notice {
+    margin-left: 40px;
+  }
+}
+
+@media (max-width: 1023px) and (min-width: 768px) {
+  .img-adaptive3__img {
+      width: 100%;
+      height: auto;
+      padding-top: 45.6%;
+      outline: 1px solid blue;
+  }
+}
+
