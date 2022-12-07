@@ -144,4 +144,39 @@ function insertMark (str, pos, len) {
    return str.slice(0, pos) + '<mark>' + str.slice(pos, pos + len) + '</mark>' + str.slice(pos + len)
 }
 
+/*FETCH*/
 
+const requestURL = 'https://jsonplaceholder.typicode.com/2users';
+
+function sendRequest(method, url) {
+  return fetch(url).then(response => response.json());
+}
+
+function createRequest(method, url, body = null) {
+  const headers = {
+    'Content-Type': 'application/json'
+  };
+  return fetch(url, {
+    method: method,
+    body: JSON.stringify(body),
+    headers: headers
+  }).then(response => {
+    if(response.ok) {
+      return response.json()
+    }
+    return response.json().then(error => {
+      const e = new Error('что-то пошло не так');
+      e.data = error;
+      throw e;
+    });
+  });
+}
+
+const body = {
+  name: 'Vladilen',
+  age: 33
+}
+
+sendRequest('GET', requestURL).then(data => console.log(data)).catch(err => console.log(err));
+
+createRequest('POST', requestURL, body).then(data => console.log(data)).catch(err => console.log(err));
