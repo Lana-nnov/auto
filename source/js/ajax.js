@@ -146,7 +146,7 @@ function insertMark (str, pos, len) {
 
 /*FETCH*/
 
-const requestURL = 'https://jsonplaceholder.typicode.com/2users';
+const requestURL = 'https://jsonplaceholder.typicode.com/users';
 
 function sendRequest(method, url) {
   return fetch(url).then(response => response.json());
@@ -180,3 +180,18 @@ const body = {
 sendRequest('GET', requestURL).then(data => console.log(data)).catch(err => console.log(err));
 
 createRequest('POST', requestURL, body).then(data => console.log(data)).catch(err => console.log(err));
+
+fetch(requestURL).then(data => console.log(data));
+
+/*Делегирование события*/
+const tasksList = document.querySelector('.tasks__list');
+
+tasksList.addEventListener('click', (event) => {
+  const li = event.target;
+  if (li.nodeName != 'LI') return;
+  console.log(li);
+  /*if (li.getAttribute('data-id') === '3') {
+    li.classList.add('bg-pink');
+  } else {}*/
+  li.classList.add('bg-pink');
+})
