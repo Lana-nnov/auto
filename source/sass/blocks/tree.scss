@@ -1,0 +1,24 @@
+.tree {
+  list-style: none;
+  text-align: left;
+}
+
+.tree ul {
+  list-style: none;
+}
+
+.tree__item {
+  font-weight: bold;
+}
+
+.tree__item--inner {
+  font-weight: normal;
+}
+
+.tree .hide::before {
+  content: "+";
+}
+
+.tree .show::before {
+  content: "-";
+}
