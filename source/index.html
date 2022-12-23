@@ -718,7 +718,15 @@
             </li>
           </ul>
         </nav>
-
+        <div class="sort">
+          <div class="sort__buttons">
+            <button class="sort__asc">Возрастание</button>
+            <button class="sort__desc">Убывание</button>
+            <button class="sort__rating">Sort rating</button>
+          </div>
+          <div class="products">
+          </div>
+        </div>
       </div>
     </main>
     <footer class="page-footer">
@@ -818,6 +826,25 @@
           <p class="page-footer__title">Интернет-магазин автозапчастей</p>
         </div>
     </footer>
+    <!-- Шаблон изображения случайного пользователя -->
+    <!--<template id="picture">
+      <a href="#" class="picture">
+        <img class="picture__img" src="" width="182" height="182" alt="Случайная фотография">
+        <p class="picture__info">
+          <span class="picture__comments"></span>
+          <span class="picture__likes"></span>
+        </p>
+      </a>
+    </template>-->
+    <template id="product">
+      <a href="#" class="product">
+        <img class="product__img" src="" width="182" height="182" alt="Случайная фотография">
+        <p class="product__info">
+          <span class="product__name"></span>
+          <span class="product__price"></span>
+        </p>
+      </a>
+    </template>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="js/jquery.js"></script>
     <script src="js/main/menu.js"></script>
@@ -830,6 +857,7 @@
     <script src="js/ajax.js"></script>
     <script src="js/tree.js"></script>
     <script src="js/menu-add.js"></script>
+    <script src="js/sort.js"></script>
     <!--<script type="module" src="js/server.js"></script>
     <script type="module" src="js/list.js"></script>-->
   </body>
