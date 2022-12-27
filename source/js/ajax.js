@@ -1,3 +1,5 @@
+import renderArticles from './sort.js';
+
 const clickMeButton = document.querySelector('.click-me')
 const getTasksButton = document.querySelector('.get-tasks')
 const deleteTasksButton = document.querySelector('.delete-tasks')
@@ -196,38 +198,17 @@ tasksList.addEventListener('click', (event) => {
   li.classList.add('bg-pink');
 })
 
-/*SoRT*/
-let similarProductTemplate = document.querySelector('#product')
-      .content
-      .querySelector('.product');
-
-let productsContainer = document.querySelector('.products');
-
-let renderArticles = function (array) {
-  console.log(array);
-  let fragment = document.createDocumentFragment();
-  array.forEach(function (element) {
-    fragment.appendChild(renderArticle(element));
-  });
-  productsContainer.appendChild(fragment);
-};
-
-//
-let renderArticle = function (product) {
-  let productElement = similarProductTemplate.cloneNode(true);
-  productElement.querySelector('.product__img').src = product.foto;
-  productElement.querySelector('.product__name').textContent = product.name;
-  productElement.querySelector('.product__price').textContent = product.price.oldUan;
-  return productElement;
-};
-
-function onProductRecieved(products) {
+/*function onProductRecieved(products) {
   console.log(products);
+  articlesBlock = products;
   products.forEach(product => {
     const article = document.createElement('article');
     article.innerHTML = product.name;
     document.querySelector('.sort__items').appendChild(article);
   })
-}
+};*/
 
 fetch('http://localhost:3000/products').then(response => response.json()).then(renderArticles);
+
+
+
