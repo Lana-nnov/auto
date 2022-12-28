@@ -51,22 +51,22 @@
     }
   ],
   "products": [
-    {"ratingRevievs": "264 отзыва",
+    {"ratingReviews": "264 отзыва",
     "price": {"oldUan": "4 333 грн", "newUan": "3 799 грн"},
     "name": "Motorola MOTO G4 (XT1622) Black&quot",
     "foto": "/img/motorola.jpg"
      },
-     {"ratingRevievs": "202 отзыва",
+     {"ratingReviews": "202 отзыва",
     "price": {"oldUan": "3 333 грн", "newUan": "2 599 грн"},
     "name": "Motorola MOTO G4 (XT1622) RED",
     "foto": "../img/motorola2.jpg"
      },
-     {"ratingRevievs": "514 отзыва",
+     {"ratingReviews": "514 отзыва",
     "price": {"oldUan": "2 333 грн", "newUan": "1 799 грн"},
     "name": "Motorola MOTO G4 (XT1622) Black&quot",
     "foto": "/img/motorola4.jpg"
      },
-     {"ratingRevievs": "22 отзыва",
+     {"ratingReviews": "22 отзыва",
     "price": {"oldUan": "5 333 грн", "newUan": "4 599 грн"},
     "name": "Motorola MOTO G4 (XT1622) RED",
     "foto": "../img/motorola5.jpg"
