@@ -1,4 +1,4 @@
-import renderArticles from './sort.js';
+import showLoadSuccess from './sort.js';
 
 const clickMeButton = document.querySelector('.click-me')
 const getTasksButton = document.querySelector('.get-tasks')
@@ -208,7 +208,7 @@ tasksList.addEventListener('click', (event) => {
   })
 };*/
 
-fetch('http://localhost:3000/products').then(response => response.json()).then(renderArticles);
+fetch('http://localhost:3000/products').then(response => response.json()).then(showLoadSuccess);
 
 
 
